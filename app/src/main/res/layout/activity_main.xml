@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Accesories"
+        android:background="@drawable/shape"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signin"
+        android:textSize="20sp"
+        android:layout_margin="18dp"
+        android:backgroundTint="#45150D"/>
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textSize="20sp"
+        android:layout_margin="18dp"
+        android:backgroundTint="#45150D"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About info"
+        android:textSize="20sp"
+        android:layout_margin="18dp"
+        android:backgroundTint="#673AB7"
+        android:id="@+id/about"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/single_item"/>
+
+</LinearLayout>

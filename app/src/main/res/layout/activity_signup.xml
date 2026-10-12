@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_gravity="center_horizontal"
+    android:animateLayoutChanges="true"
+    tools:context=".Signup">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#364A12"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up to get started"
+        android:gravity="center"
+        android:textColor="#5E2020"
+        android:layout_marginBottom="8dp"/>
+<!--    username field-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:textColorHint="#BABABA"
+        android:inputType="textPersonName"
+        android:autofillHints="username"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:id="@+id/username"/>
+
+    <!--    email field-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:textColorHint="#BABABA"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:id="@+id/email"/>
+
+    <!--    phone field-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="phone"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:textColorHint="#BABABA"
+        android:inputType="phone"
+        android:autofillHints="phone"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:id="@+id/phone"/>
+
+    <!--    password field-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:textColorHint="#BABABA"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:id="@+id/password"/>
+
+<!--    submit button-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE ACCOUNT"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:backgroundTint="#5E2020"
+        android:elevation="2dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:contentDescription="Create account"
+        android:layout_marginTop="4dp"
+        android:id="@+id/signup_button"/>
+
+
+
+</LinearLayout>
